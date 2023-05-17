@@ -40,20 +40,20 @@
 	}
 }
 
-@media (min-width: 768px) {
-	.white-block {
-		height: 50px;
-		width: 45%;
-	}
-	.header {
-		&__heading {
-			font-size: base.$large_h1;
-		}
-		&__text {
-			font-size: base.$large_text;
-		}
-		&__btn {
-			font-size: base.$large_btn_size;
-		}
-	}
-}
+// @media (min-width: 768px) {
+// 	.white-block {
+// 		height: 50px;
+// 		width: 45%;
+// 	}
+// 	.header {
+// 		&__heading {
+// 			font-size: base.$large_h1;
+// 		}
+// 		&__text {
+// 			font-size: base.$large_text;
+// 		}
+// 		&__btn {
+// 			font-size: base.$large_btn_size;
+// 		}
+// 	}
+// }
