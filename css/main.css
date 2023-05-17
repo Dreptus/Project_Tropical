@@ -464,12 +464,6 @@ textarea {
   transform-origin: left;
 }
 
-@media (min-width: 768px) {
-  .white-block {
-    height: 150px;
-    width: 150%;
-  }
-}
 .header {
   position: relative;
   display: flex;
@@ -517,6 +511,15 @@ textarea {
   .white-block {
     height: 50px;
     width: 45%;
+  }
+  .header__heading {
+    font-size: 6.6rem;
+  }
+  .header__text {
+    font-size: 2.2rem;
+  }
+  .header__btn {
+    font-size: 1.6rem;
   }
 }
 .burger-btn {
