@@ -15,45 +15,42 @@
 	background-attachment: scroll;
 	&__heading {
 		font-family: base.$dancing-font;
-		font-size: base.$size_h1;
+		font-size: base.$small_h1;
 		font-weight: 300;
 		padding: 20px;
 	}
 	&__text {
-		font-size: base.$size_text;
-	}
-}
-.white-block {
-	position: absolute;
-	height: 40px;
-	width: 60%;
-	background-color: base.$pure-white;
-	&-left {
-		bottom: 0;
-		left: -50px;
-		transform: skew(45deg);
-	}
-	&-right {
-		top: 0;
-		right: -50px;
-		transform: skew(45deg);
+		font-size: base.$small_text;
 	}
 }
 
-// @media (min-width: 768px) {
-// 	.white-block {
-// 		height: 50px;
-// 		width: 45%;
-// 	}
-// 	.header {
-// 		&__heading {
-// 			font-size: base.$large_h1;
-// 		}
-// 		&__text {
-// 			font-size: base.$large_text;
-// 		}
-// 		&__btn {
-// 			font-size: base.$large_btn_size;
-// 		}
-// 	}
-// }
+@media (min-width: 768px) {
+	.white-block {
+		height: 50px;
+		width: 45%;
+	}
+	.header {
+		&__heading {
+			font-size: base.$medium_h1;
+		}
+		&__text {
+			font-size: base.$medium_text;
+		}
+		&__btn {
+			font-size: base.$medium_btn_size;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.header {
+		background-image: base.$blue-gradient,
+			url(../../Assets/desktop_palm-3172367.jpg);
+		&__heading {
+			font-size: base.$large-h1;
+		}
+		&__text {
+			font-size: base.$xlarge-text;
+		}
+	}
+}

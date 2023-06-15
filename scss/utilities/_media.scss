@@ -1,5 +1,13 @@
 @use '../base';
 
+@media (min-width: 576px){
+	.dreams{
+		&__box{
+			flex-direction: row;
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	.white-block {
 		height: 50px;
@@ -7,13 +15,29 @@
 	}
 	.header {
 		&__heading {
-			font-size: base.$large_h1;
+			font-size: base.$medium_h1;
 		}
 		&__text {
-			font-size: base.$large_text;
+			font-size: base.$medium_text;
 		}
 		&__btn {
-			font-size: base.$large_btn_size;
+			font-size: base.$medium_btn_size;
 		}
+	}
+	.section-heading{
+		font-size: base.$medium_h3;
+	}
+	.section-padding{
+		padding: 8em 4em;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.section-heading{
+		font-size: base.$large_h3;
+	}
+	.section-padding{
+		padding: 10em 4em;
 	}
 }

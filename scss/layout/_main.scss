@@ -1,0 +1,149 @@
+@use '../base';
+@use '../utilities';
+
+.section-heading {
+	position: relative;
+	margin-bottom: 2em;
+	font-size: base.$small_h2;
+	font-family: base.$main-font;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	color: base.$main-color;
+	letter-spacing: 2px;
+}
+.dreams__title {
+	margin: 0.5em 0;
+	font-size: base.$small_h3;
+	font-family: base.$main-font;
+	font-weight: 700;
+}
+.dreams__text {
+	font-size: base.$small_text;
+	font-family: base.$main-font;
+	line-height: 1.2em;
+}
+
+.section-padding {
+	padding: 6em 4em;
+}
+
+.dreams {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin: 2em 0;
+	}
+	&__img {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+}
+
+.hero-img {
+	position: relative;
+	padding: 10em 2em;
+	@include utilities.heroImages('../../Assets/polynesia-3021072_1280.jpg');
+	text-align: center;
+	color: base.$pure-white;
+	overflow: hidden;
+	&__title {
+		font-family: base.$dancing-font;
+		font-size: base.$medium_h1;
+		margin-bottom: 0.5rem;
+		font-weight: 300;
+		padding: 2rem;
+	}
+	&__text {
+		padding: 1em 0;
+	}
+}
+
+@media (min-width: 576px) {
+	.dreams {
+		&__box {
+			flex-direction: row;
+			justify-content: space-between;
+			&-text {
+				width: 55%;
+				&--right {
+					text-align: right;
+				}
+			}
+			&-img {
+				width: 40%;
+				&--right {
+					order: 1;
+				}
+			}
+		}
+		&__img {
+			margin-bottom: 0;
+			max-height: 300px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: base.$medium_h2;
+	}
+	.section-padding {
+		padding: 8em 4em;
+	}
+	.dreams {
+		&__text {
+			font-size: base.$medium_text;
+		}
+		&__title {
+			font-size: base.$medium_h3;
+		}
+	}
+	.hero-img {
+		padding: 30em 2em;
+		hr {
+			margin: 0 auto;
+			width: 70%;
+		}
+		&__text {
+			font-size: base.$large_text;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.section-heading {
+		font-size: base.$large_h2;
+	}
+	.section-padding {
+		padding: 10em 4em;
+	}
+	.dreams {
+		&__box {
+			margin: 5em 0;
+			&-text {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+			}
+		}
+		&__title {
+			font-size: base.$large_h3;
+		}
+		&__text {
+			font-size: base.$large_text;
+		}
+	}
+	.hero-img {
+		padding: 40rem 2em;
+		background-image: base.$blue-gradient,
+			url(../../Assets/polynesia-3021072.jpg);
+		&__title {
+			font-size: base.$large_h1;
+		}
+		hr{
+			width: 60%;
+			max-width: 900px;
+		}
+	}
+}
