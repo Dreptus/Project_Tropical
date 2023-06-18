@@ -12,13 +12,15 @@
 	color: base.$main-color;
 	letter-spacing: 2px;
 }
-.dreams__title {
+.dreams__title,
+.islands__card-img-title {
 	margin: 0.5em 0;
 	font-size: base.$small_h3;
 	font-family: base.$main-font;
 	font-weight: 700;
 }
-.dreams__text {
+.dreams__text,
+.islands__card-img-info {
 	font-size: base.$small_text;
 	font-family: base.$main-font;
 	line-height: 1.2em;
@@ -59,6 +61,34 @@
 	}
 }
 
+//Islands
+.islands {
+	&__card {
+		position: relative;
+		margin: 2em 0;
+		height: 450px;
+		color: base.$pure-white;
+		text-align: center;
+		// efekt głębi
+		perspective: 1000px;
+		&-img {
+			padding: 2em;
+			height: 100%;
+			border-radius: 8px;
+			background-size: cover;
+			&--first {
+				background-image: base.$light-blue-gradient, url('../../Assets/water-3354063_1280.jpg');
+			}
+			&--second {
+				background-image: base.$light-blue-gradient, url('../../Assets/water-3354063_1280.jpg');
+			}
+			&--third {
+				background-image: base.$light-blue-gradient, url('../../Assets/water-3354063_1280.jpg');
+			}
+		}
+	}
+}
+
 @media (min-width: 576px) {
 	.dreams {
 		&__box {
@@ -80,6 +110,9 @@
 		&__img {
 			margin-bottom: 0;
 			max-height: 300px;
+		}
+		&__info {
+			padding: 0.5rem;
 		}
 	}
 }
@@ -141,7 +174,7 @@
 		&__title {
 			font-size: base.$large_h1;
 		}
-		hr{
+		hr {
 			width: 60%;
 			max-width: 900px;
 		}
